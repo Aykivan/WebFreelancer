@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My form №1</title>
+</head>
+
+<body>
+	<h1>Form №1</h1>
+	<form action="#" method="get">
+		<div class="name">
+			<p>Имя</p>
+			<input tabindex="1" type="text" name="nameuser" placeholder="Введите имя">
+		</div>
+		<div class="password">
+			<p>Пароль</p>
+			<input tabindex="2" type="password" name="pass" placeholder="Введите пароль">
+		</div>
+		<div class="password">
+			<p>Телефон</p>
+			<input tabindex="3" type="tel" name="pass" placeholder="Введите номер телефона">
+		</div>
+		<div class="radiogender">
+			<p>Пол</p>
+			<div><input tabindex="4" checked type="radio" name="gender" value="man">Мужской</div>
+			<div><input tabindex="4" type="radio" name="gender" value="wonam">Женский</div>
+		</div>
+		<div class="checkbox">
+			<p>Имущество</p>
+			<div><input tabindex="5" checked type="checkbox" name="home">Дом</div>
+			<div><input tabindex="6" type="checkbox" name="car">Машина</div>
+			<div><input tabindex="7" disabled type="checkbox" name="telephon">Велик</div>
+		</div>
+		<div class="textarea">
+			<p>Дополнительная информация</p>
+			<textarea tabindex="8" name="textarea" placeholder="Введите информацию о себе"></textarea>
+		</div>
+		<div class="file">
+			<p>Прикрепите фото</p>
+			<input tabindex="9" type="file" name="photo">
+		</div>
+		<div class="select__option">
+			<p>Любимый цвет</p>
+			<select tabindex="10" name="color">
+				<option value="color1">Красный</option>
+				<option selected value="color2">Синий</option>
+				<option value="color3">Зеленый</option>
+			</select>
+		</div>
+		<br>
+		<div class="button">
+			<button tabindex="11" class="submit">Отправить</button>
+			<button tabindex="12" class="reset">Очистить</button>
+		</div>
+	</form>
+	<br>
+	<div class="link__main">
+		<a href="../index.html">Все Формы</a>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ManyForms</title>
+</head>
+
+<body>
+	<h1>MY FORMS</h1>
+	<div class="link__forms">
+		<div class="link__form">
+			<a href="./manyforms/form1.html" target="_blank">My form №1</a>
+		</div>
+		<div class="link__form">
+			<a href="./manyforms/form2.html" target="_blank">My form №2</a>
+		</div>
+		<div class="link__form">
+			<a href="./manyforms/form3.html" target="_blank">My form №3</a>
+		</div>
+	</div>
+	<h2>Теория</h2>
+	<div>
+		<p>
+			Тег form используется для создания HTML-формы, в которой пользователь может ввести данные. Этот тег
+			определяет область, в которой содержится контент формы, а также указывает на сервер, куда отправлять
+			данные формы.
+		</p>
+		<p>Атрибуты тега:</p>
+		<ul>
+			<li>action="#" вставляем ссылку куда будут отправлены данные</li>
+			<li>method="post/get" - get - по умолчанию, post - использует шифрование и необходим для отправки файлов
+			</li>
+			<li>enctype="multipart/form-data" - чтото про кодировку на сороне пользователя</li>
+		</ul>
+	</div>
+	<form action="#" method="post" enctype="multipart/form-data"></form>
+	<div>
+		<input type="text" name="username" value="User">
+	</div>
+	<div>
+		<input type="password" name="userpassword" value="">
+	</div>
+	<div>
+		<p><input checked type="radio" name="beer" value="lager">Светлое пиво</p>
+		<p><input type="radio" name="beer" value="dark">Темное пиво</p>
+	</div>
+	<br>
+	<div>
+		<p><input checked type="checkbox" name="beer" value="lager">Наличие</p>
+		<p><input type="checkbox" name="beer2" value="lager">Наличие 1</p>
+		<p><input type="checkbox" name="beer3" value="lager">Наличие 2</p>
+		<p><input type="checkbox" name="beer4" value="lager">Наличие 3</p>
+	</div>
+	<br>
+	<div>
+		<p><input type="file" name="photo">photo</p>
+	</div>
+	<br>
+	<div>
+		<textarea placeholder="Введите текст" disabled name="text" id="" cols="30" rows="10"></textarea>
+	</div>
+	<br>
+	<div>
+		<select multiple name="color">
+			<option selected value="red">Красный</option>
+			<option value="red2">Красный2</option>
+			<option value="red3">Красный3</option>
+		</select>
+	</div>
+	<br>
+	<div>
+		<button type="submit">отправить</button>
+	</div>
+
+</body>
+
+</html>
