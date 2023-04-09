@@ -1,0 +1,146 @@
+/* ---------------------------------------------------------------ОБНУЛЕНИЕ-------- */
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 100%;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input ::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	bottom: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+input {
+	border: 1px solid #61606067;
+}
+
+/* -----------------------------------------------------------FORM-PRACTICE-------- */
+body {
+	justify-content: center;
+	display: flex;
+}
+
+.main__container {
+	margin: 0px 50px;
+	min-width: 400px;
+	/* border: 1px solid; */
+}
+
+._container {
+	padding: 5px;
+	border: 1px solid;
+}
+
+.block__left {
+	flex: 35%;
+}
+
+.block__right {
+	flex: 65%;
+	/* border: 1px solid; */
+}
+
+h1 {
+	margin: 20px 0;
+	text-align: center;
+}
+
+/* -------------------------------------------------------------FORM-ANSWER-------- */
+.form__answer {
+	display: flex;
+}
+
+.answer__text {}
+
+.radio__items {}
+
+.radio__item {}
+
+/* ---------------------------------------------------------------FORM-NAME-------- */
+.form__name {
+	margin-top: 10px;
+	border-bottom: 1px solid #61606067;
+	border-top: 1px solid #61606067;
+}
+
+.name__container {}
+
+.name__container input {
+	padding: 5px;
+	width: 100%;
+	height: 24px;
+}
+
+.sub__name {
+	padding: 5px;
+	display: flex;
+	align-items: center;
+}
