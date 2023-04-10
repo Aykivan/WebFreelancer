@@ -79,7 +79,7 @@ img {
 }
 
 input {
-	border: 1px solid #61606067;
+	border: 1px solid #6160606f;
 }
 
 /* -----------------------------------------------------------FORM-PRACTICE-------- */
@@ -96,7 +96,7 @@ body {
 
 ._container {
 	padding: 5px;
-	border: 1px solid;
+	/* border: 1px solid; */
 }
 
 .block__left {
@@ -105,9 +105,20 @@ body {
 
 .block__right {
 	flex: 65%;
-	/* border: 1px solid; */
 }
 
+.block__name {
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	border-top: 1px solid #61606020;
+}
+
+.block__name:last-child {
+	border-bottom: 1px solid #61606020;
+}
+
+/* ----------------------------------------------------------------------H1-------- */
 h1 {
 	margin: 20px 0;
 	text-align: center;
@@ -118,7 +129,9 @@ h1 {
 	display: flex;
 }
 
-.answer__text {}
+.answer__text {
+	padding: 5px;
+}
 
 .radio__items {}
 
@@ -126,12 +139,10 @@ h1 {
 
 /* ---------------------------------------------------------------FORM-NAME-------- */
 .form__name {
-	margin-top: 10px;
-	border-bottom: 1px solid #61606067;
-	border-top: 1px solid #61606067;
+	/* margin-top: 10px; */
+	/* border-bottom: 1px solid #61606067;
+	border-top: 1px solid #61606067; */
 }
-
-.name__container {}
 
 .name__container input {
 	padding: 5px;
@@ -139,8 +150,65 @@ h1 {
 	height: 24px;
 }
 
-.sub__name {
-	padding: 5px;
+/* -----------------------------------------------------------ADDRESS-EMPTY-------- */
+.form__address {
+	margin-top: 16px;
+}
+
+.last__address {}
+
+.block__name-address {
+	border: none;
+}
+
+.block__name-address:last-child {
+	border: none;
+}
+
+.right__address {
+	padding: 5px 0px 5px 0px;
+	display: flex;
+	border-top: 1px solid #61606020;
+	border-bottom: 1px solid #61606020;
+}
+
+.right__address-k {
 	display: flex;
 	align-items: center;
 }
+
+.text {
+	padding: 0px 5px 0px 5px;
+}
+
+/* ----------------------------------------------------------CONTACTS-EMPTY-------- */
+.form__contacts {
+	margin-top: 16px;
+}
+
+.form__contacts>* {
+	/* height: 24px; */
+}
+
+._container {}
+
+.contacts__telephone {}
+
+.contacts__email {}
+
+.contacts__country {
+}
+
+.select {
+	margin: 4px;
+	min-width: 200px;
+	height: 20px;
+	border: 1px solid #0000002b;
+	background-color: #a8a8a822;
+}
+
+.contacts__region {}
+
+.contacts__textarea {}
+
+.contacts__info {}

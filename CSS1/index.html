@@ -22,11 +22,11 @@
 				<div class="block__right">
 					<div class="radio__items">
 						<div class="radio__item">
-							<input type="radio" name="radio answer">
+							<input tabindex="1" type="radio" name="radio answer">
 							<span>в электронной форме</span>
 						</div>
 						<div class="radio__item">
-							<input type="radio" name="radio answer">
+							<input tabindex="2" type="radio" name="radio answer">
 							<span>в письменной форме</span>
 						</div>
 					</div>
@@ -34,39 +34,209 @@
 			</div>
 
 			<div class="form__name _container">
-				<div class="sub__name">
+				<div class="block__name">
 					<div class="block__left">
 						Фамилия:
 					</div>
 					<div class="block__right">
 						<div class="name__container">
-							<input type="text" name="second name">
+							<input tabindex="3" type="text" name="second name">
 						</div>
 					</div>
 				</div>
-				<div class="sub__name">
+				<div class="block__name">
 					<div class="block__left">
 						Имя:
 					</div>
 					<div class="block__right">
 						<div class="name__container">
-							<input type="text" name="second name">
+							<input tabindex="4" type="text" name="first name">
 						</div>
 					</div>
 				</div>
-				<div class="sub__name">
+				<div class="block__name">
 					<div class="block__left">
 						Отчество:
 					</div>
 					<div class="block__right">
 						<div class="name__container">
-							<input type="text" name="second name">
+							<input tabindex="5" type="text" name="patronymic name">
 						</div>
 					</div>
 				</div>
 			</div>
 
-			
+			<div class="form__address _container">
+				<div class="full__address">
+					<div class="block__name">
+						<div class="block__left">
+							Почтовый адрес:
+						</div>
+					</div>
+					<div class="block__name">
+						<div class="block__left">
+							Страна:
+						</div>
+						<div class="block__right">
+							<div class="name__container">
+								<input tabindex="6" type="text" name="country">
+							</div>
+						</div>
+					</div>
+					<div class="block__name">
+						<div class="block__left">
+							Область:
+						</div>
+						<div class="block__right">
+							<div class="name__container">
+								<input tabindex="7" type="text" name="oblast">
+							</div>
+						</div>
+					</div>
+					<div class="block__name">
+						<div class="block__left">
+							Город:
+						</div>
+						<div class="block__right">
+							<div class="name__container">
+								<input tabindex="8" type="text" name="town">
+							</div>
+						</div>
+					</div>
+					<div class="block__name">
+						<div class="block__left">
+							Улица
+						</div>
+						<div class="block__right">
+							<div class="name__container">
+								<input tabindex="9" type="text" name="street">
+							</div>
+						</div>
+					</div>
+					<div class="block__name">
+						<div class="block__left">
+							Почтовый индекс
+						</div>
+						<div class="block__right">
+							<div class="name__container">
+								<input tabindex="10" type="text" name="pochtoviy">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="last__address">
+					<div class="block__name block__name-address">
+						<div class="block__left">
+						</div>
+						<div class="block__right right__address">
+							<div class="right__address-k">
+								<div class="text">
+									Дом:
+								</div>
+								<div class="name__container">
+									<input tabindex="11" type="text" name="home number">
+								</div>
+							</div>
+							<div class="right__address-k">
+								<div class="text">
+									Корп:
+								</div>
+								<div class="name__container">
+									<input tabindex="12" type="text" name="korp number">
+								</div>
+							</div>
+							<div class="right__address-k">
+								<div class="text">
+									Кв:
+								</div>
+								<div class="name__container">
+									<input tabindex="13" type="text" name="kv nuber">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="form__contacts _container">
+				<div class="contacts__telephone block__name">
+					<div class="block__left">
+						Телефон:
+					</div>
+					<div class="block__right">
+						<div class="name__container">
+							<input tabindex="14" type="tel" name="tel">
+						</div>
+					</div>
+				</div>
+				<div class="contacts__email block__name">
+					<div class="block__left">
+						E-mail:
+					</div>
+					<div class="block__right">
+						<div class="name__container">
+							<input tabindex="15" type="email" name="tel">
+						</div>
+					</div>
+				</div>
+				<div class="contacts__country block__name">
+					<div class="block__left">
+						Страна:
+					</div>
+					<div class="block__right">
+						<div class="name__container">
+							<select tabindex="16" class="select" name="county__contacts">
+								<option value="choice__country">Выберите страну</option>
+								<option value="C1">C1</option>
+								<option value="C2">C2</option>
+								<option value="C3">C3</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="contacts__region block__name">
+					<div class="block__left">
+						Регион:
+					</div>
+					<div class="block__right">
+						<div class="name__container">
+							<select tabindex="17" class="select" name="region__contacts">
+								<option value="choice__region">Выберите регион</option>
+								<option value="R1">R1</option>
+								<option value="R2">R2</option>
+								<option value="R3">R3</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="contacts__textarea block__name">
+					<div class="block__left">
+						Ваше сообщение:
+					</div>
+					<div class="block__right">
+						<div class="name__container">
+							<textarea tabindex="18" name="massage" cols="30" rows="10"></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="contacts__textarea block__name">
+					<div class="block__left">
+						Прикрепите файл:
+					</div>
+					<div class="block__right">
+						<div class="name__container">
+							<input tabindex="19" type="file" name="your file">
+						</div>
+					</div>
+				</div>
+				<div class="contacts__info block__name">
+					<div class="block__left"></div>
+					<div class="block__right">
+						Общий обьем прикрепляемых файлов не должен превышать 5мб
+					</div>
+				</div>
+			</div>
 		</form>
 	</div>
 </body>
