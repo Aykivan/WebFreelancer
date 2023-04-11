@@ -1,0 +1,152 @@
+/* ---------------------------------------------------------------ОБНУЛЕНИЕ-------- */
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 100%;
+	font-size: 18px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input ::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	bottom: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+/* ----------------------------------------------------------GENERALS-CLASS-------- */
+body {
+	display: flex;
+	justify-content: center;
+}
+
+input {
+	padding: 8px;
+	border: 1px solid #616060a3;
+	font-size: 20px;
+}
+
+select {
+	padding: 8px 0px 8px 4px;
+	border: 1px solid #616060a3;
+	font-size: 17px;
+	width: 70%;
+}
+
+._container {
+	min-width: 800px;
+}
+
+.left-right__block {
+	padding: 5px;
+	display: flex;
+	/* align-items: center; */
+	font-weight: 600;
+	font-size: 20px;
+
+}
+
+.left__block {
+	display: flex;
+	flex: 30%;
+	justify-content: right;
+}
+
+.right__block {
+	margin-left: 30px;
+	display: flex;
+	flex: 70%;
+	justify-content: left;
+}
+
+.right__block input {}
+
+.red__stars {
+	padding-top: 3.5px;
+	color: red;
+	margin-right: 5px;
+}
+
+/* --------------------------------------------------------------MAIN-TITLE-------- */
+h1 {
+	margin: 20px;
+	text-align: center;
+}
+
+h2 {
+	margin: 10px 0;
+	text-align: center;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+/* ---------------------------------------------------------------NEXT-BACK-------- */
+.form__contact-name {
+	margin-top: 20px;
+}
+
+.name {}
