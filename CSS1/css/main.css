@@ -244,7 +244,13 @@ h2 {
 }
 
 /* ---------------------------------------------------------------NEXT-BACK-------- */
-.next__back {}
+.next__back {
+	padding-bottom: 10px;
+}
+
+.next__back .block__name {
+	border: none;
+}
 
 .next__back .block__right {
 	text-align: right;

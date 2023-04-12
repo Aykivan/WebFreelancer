@@ -97,6 +97,10 @@ select {
 	width: 70%;
 }
 
+form {
+	border-bottom: 1px solid #00000023;
+}
+
 ._container {
 	min-width: 800px;
 }
@@ -111,15 +115,16 @@ select {
 }
 
 .left__block {
+	margin-top: 4px;
 	display: flex;
-	flex: 30%;
+	flex: 31%;
 	justify-content: right;
 }
 
 .right__block {
 	margin-left: 30px;
 	display: flex;
-	flex: 70%;
+	flex: 69%;
 	justify-content: left;
 }
 
@@ -133,20 +138,128 @@ select {
 
 /* --------------------------------------------------------------MAIN-TITLE-------- */
 h1 {
-	margin: 20px;
+	margin-top: 20px;
 	text-align: center;
 }
 
 h2 {
+	padding: 5px;
 	margin: 10px 0;
 	text-align: center;
 	font-size: 24px;
 	font-weight: normal;
 }
 
-/* ---------------------------------------------------------------NEXT-BACK-------- */
-.form__contact-name {
-	margin-top: 20px;
+/* -------------------------------------------------------------FORM-STREET-------- */
+.form__street {}
+
+.street {}
+
+.w100 input {
+	width: 100%;
 }
 
-.name {}
+.form__contact-name{
+	margin-top: 10px;
+}
+
+/* ----------------------------------------------------------FORM-TELEPHONE-------- */
+.form__tel {}
+
+.upper__text {
+	color: #616060a3;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.code__zone .upper__text,
+.code__phone .upper__text {
+	margin-left: 8px;
+}
+
+.tel__right-block {
+	display: flex;
+}
+
+.code__country input {
+	width: 140px;
+}
+
+.code__zone input {
+	margin-left: 8px;
+	width: 140px;
+}
+
+.code__phone input {
+	margin-left: 8px;
+	width: 190px;
+}
+
+/* ---------------------------------------------------------FORM-TELEPHONE2-------- */
+.form__tel2 {}
+
+.tel2 input {
+	width: 288px;
+}
+
+/* -------------------------------------------------------------FORM-BUTTON-------- */
+.form__button {
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+
+.form__button button {
+	margin-right: 20px;
+	padding: 3px 9px;
+	background-color: #53535310;
+	color: #000;
+	font-weight: normal;
+	font-size: 18px;
+	border: 1px solid #000;
+	border-radius: 3px;
+	transition: 0.3s ease;
+}
+
+.form__button button:hover {
+	background-color: #7a797951;
+}
+
+.button__send {}
+
+.send {}
+
+.button__cancel {}
+
+.cancel {}
+
+/* ---------------------------------------------------------------NEXT-BACK-------- */
+.next__back {
+}
+
+.next__back .block__right {
+	text-align: right;
+}
+
+.block__name{
+	padding-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.block__name a {
+	padding: 3px 10px;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: lowercase;
+	color: #000;
+	background-color: #9c9c9c2d;
+	border: 1px solid #000;
+	border-radius: 5px;
+	transition: 0.1s;
+}
+
+.block__name a:hover {
+	border: 2px solid #000;
+}
