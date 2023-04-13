@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./form3.css">
+	<title>CSS1 - Form3</title>
+</head>
+
+<body>
+	<div class="_container">
+		<div class="_container">
+			<header class="header">
+				<div class="form3__title">
+					<h1>Practice with Forms and Classes</h1>
+					<h2>~ №3 ~</h2>
+				</div>
+			</header>
+			<main>
+				<form action="#" class="form">
+					<div class="form__adress">
+						<h3>Куда адресовано</h3>
+						<div class="address__border">
+							<div class="address__region">
+								<div class="address__text">
+									Регион:<span class="red__star">*</span>
+								</div>
+								<div class="address__select">
+									<select tabindex="1" name="country">
+										<option selected value="choice">Выберите</option>
+										<option value="1">Country1</option>
+										<option value="2">Country2</option>
+										<option value="3">Country3</option>
+									</select>
+								</div>
+							</div>
+							<div class="address__subdivision">
+								<div class="subdivision__text">
+									Подразделение:<span class="red__star">*</span>
+								</div>
+								<div class="subdivision__input">
+									<input tabindex="2" type="text">
+								</div>
+							</div>
+							<div class="address__job-title">
+								<div class="job-title__text">
+									Должность:
+								</div>
+								<div class="job-title__input">
+									<input tabindex="3" type="text">
+								</div>
+							</div>
+							<div class="address__name">
+								<div class="name__text">
+									Ф.И.О.:
+								</div>
+								<div class="name__input">
+									<input tabindex="4" type="text">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form__sender">
+						<h3>Заявитель</h3>
+						<div class="sender__border">
+							<div class="sender__radio">
+								<div class="b2c">
+									<input tabindex="5" checked class="w__no-100" type="radio" name="B2B or B2C">
+									<div class="b2c__text">
+										Физическое лицо
+									</div>
+								</div>
+								<div class="b2b">
+									<input tabindex="6" class="w__no-100" type="radio" name="B2B or B2C">
+									<div class="b2b__text">
+										Юридическое лицо
+									</div>
+								</div>
+							</div>
+							<div class="sender__surname">
+								<div class="surname__text">
+									Фамилия:<span class="red__star">*</span>
+								</div>
+								<div class="surname__input">
+									<input tabindex="7" type="text" name="surname">
+								</div>
+							</div>
+							<div class="sender__first-name">
+								<div class="first-name__text">
+									Имя:<span class="red__star">*</span>
+								</div>
+								<div class="first-name__input">
+									<input tabindex="8" type="text" name="surname">
+								</div>
+							</div>
+							<div class="sender__patronymic">
+								<div class="patronymic__text">
+									Отчество:
+								</div>
+								<div class="patronymic__input">
+									<input tabindex="9" type="text" name="surname">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form__reply-address">
+						<h3>Адрес для ответа</h3>
+						<div class="reply-address__border">
+							<div class="reply-address__email">
+								<div class="email__text bold__text">
+									Адрес электронной почты:<span class="red__star">*</span>
+								</div>
+								<div class="email__input">
+									<input tabindex="10" type="email" name="email">
+								</div>
+							</div>
+							<div class="reply-address__checkbox">
+								<div class="reply-address__input">
+									<input tabindex="11" type="checkbox" name="email check">
+								</div>
+								<div class="checkbox__text">
+									Указать почтовый адрес
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form__telephone">
+						<div class="telephone__text">
+							Телефон:
+						</div>
+						<div class="telephone__input">
+							<input tabindex="12" type="tel" >
+						</div>
+					</div>
+					<div class="form__place">
+						<div class="place__text">
+							Место события (регион):
+						</div>
+						<div class="place__selection">
+							<select tabindex="13" name="place">
+								<option selected value="choice region">--Выберите регион--</option>
+								<option value="1">place 1</option>
+								<option value="2">place 2</option>
+								<option value="3">place 3</option>
+							</select>
+						</div>
+					</div>
+					<div class="form__appeal">
+						<h3 class="appeal__title">
+							Уже обращались по данному вопросу?
+						</h3>
+						<div class="appeal__border">
+							<div class="appeal__subdivision">
+								<div class="ap-subdivision__text">
+									Подразделение:
+								</div>
+								<div class="ap-subdivision__input">
+									<input tabindex="14" type="text" name="subdivision">
+								</div>
+							</div>
+							<div class="appeal__date">
+								<div class="date__text">
+									Дата:
+								</div>
+								<div class="date__input">
+									<input tabindex="15" type="date" name="date">
+								</div>
+								<div class="empty__block"></div>
+							</div>
+						</div>
+					</div>
+					<div class="form__textarea">
+						<h3 class="textarea__title">
+							Текст обращения: <span class="red__star">*</span>
+						</h3>
+						<div class="">
+							<textarea tabindex="16" class="textarea__border" type="textarea" name="textarea" id="textarea"></textarea>
+						</div>
+					</div>
+					<div class="form__file">
+						<input tabindex="17" class="my__file" type="file" name="file" value="Прикрепить файл">
+					</div>
+				</form>
+			</main>
+			<footer class="footer">
+				<div class="next__back _container">
+					<div class="block__name">
+						<div class="block__left">
+							<a class="back__link" href="/form2/form2.html">Back</a>
+						</div>
+						<div class="block__right">
+							<a class="next__link" href="/index.html">Next</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+</body>
+
+</html>

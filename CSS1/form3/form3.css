@@ -1,0 +1,486 @@
+/* ---------------------------------------------------------------ОБНУЛЕНИЕ-------- */
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 100%;
+	font-size: 18px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input ::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	bottom: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+/* ------------------------------------------------------------GENERAL-BACK-------- */
+body {
+	display: flex;
+	justify-content: center;
+}
+
+._container {
+	min-width: 800px;
+	justify-content: center;
+	text-align: center;
+}
+
+.address__border,
+.sender__border,
+.reply-address__border,
+.appeal__border,
+.textarea__border {
+	padding: 20px;
+	border: 2px solid #0000003f;
+}
+
+.red__star {
+	color: rgb(158, 0, 0);
+}
+
+h3 {
+	margin-top: 20px;
+	margin-bottom: 5px;
+	padding: 10px 0;
+	text-align: left;
+	color: rgb(158, 0, 0);
+}
+
+select,
+input {
+	width: 100%;
+	font-size: 18px;
+	color: #000000a4;
+}
+
+select:hover,
+input:hover {
+	color: #000000c4;
+}
+
+form {
+	border-bottom: 1px solid #00000023;
+}
+
+/* --------------------------------------------------------------MAIN-TITLE-------- */
+h1 {
+	margin-top: 20px;
+	text-align: center;
+	font-size: 42px;
+}
+
+h2 {
+	padding: 10px;
+	margin: 10px 0;
+	text-align: center;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+/* ------------------------------------------------------------FORM-ADDRESS-------- */
+.form__adress {}
+
+.address__region {
+	padding: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.address__text {
+	text-align: left;
+	flex: 25%;
+}
+
+.address__select {
+	padding: 7px;
+	flex: 75%;
+	text-align: left;
+	border: 2px solid #0000003f;
+	border-radius: 4px;
+}
+
+.address__select:hover {
+	border: 2px solid #00000092;
+}
+
+.address__subdivision {
+	padding: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.subdivision__text {
+	flex: 25%;
+	text-align: left;
+}
+
+.subdivision__input {
+	padding: 7px;
+	flex: 75%;
+	text-align: left;
+	border: 2px solid #0000003f;
+}
+
+.subdivision__input:hover {
+	border: 2px solid #00000092;
+}
+
+.address__job-title {
+	padding: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.job-title__text {
+	text-align: left;
+	flex: 25%;
+}
+
+.job-title__input {
+	padding: 7px;
+	flex: 75%;
+	text-align: left;
+	border: 2px solid #0000003f;
+}
+
+.job-title__input:hover {
+	border: 2px solid #00000092;
+}
+
+.address__name {
+	padding: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.name__text {
+	flex: 25%;
+	text-align: left;
+}
+
+.name__input {
+	padding: 7px;
+	flex: 75%;
+	text-align: left;
+	border: 2px solid #0000003f;
+}
+
+.name__input:hover {
+	border: 2px solid #00000092;
+}
+
+/* -------------------------------------------------------------FORM-SENDER-------- */
+.form__sender {}
+
+.sender__radio {
+	margin-bottom: 10px;
+	padding: 10px;
+	display: flex;
+}
+
+.b2c,
+.b2b {
+	display: flex;
+	flex: 50%;
+}
+
+input.w__no-100 {
+	width: auto;
+}
+
+.b2c__text,
+.b2b__text {
+	margin-left: 5px;
+}
+
+
+.sender__surname,
+.sender__first-name,
+.sender__patronymic {
+	padding: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.surname__text,
+.first-name__text,
+.patronymic__text {
+	flex: 15%;
+	text-align: left;
+}
+
+.surname__input,
+.first-name__input,
+.patronymic__input {
+	padding: 7px;
+	flex: 85%;
+	text-align: left;
+	border: 2px solid #0000003f;
+}
+
+.surname__input:hover,
+.first-name__input:hover,
+.patronymic__input:hover {
+	border: 2px solid #00000092;
+}
+
+/* ------------------------------------------------------FORM-REPLY-ADDRESS-------- */
+.form__reply-address {}
+
+.reply-address__email {
+	padding: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.email__text {
+	flex: 50%;
+	text-align: left;
+}
+
+.email__input {
+	padding: 7px;
+	flex: 50%;
+	text-align: left;
+	border: 2px solid #0000003f;
+}
+
+.email__input:hover {
+	border: 2px solid #00000092;
+}
+
+.bold__text {
+	font-weight: bold;
+}
+
+.reply-address__checkbox {
+	padding: 10px;
+	display: flex;
+	justify-content: start;
+}
+
+.reply-address__input {
+	height: 100%;
+}
+
+.checkbox__text {
+	margin-left: 20px;
+}
+
+/* ----------------------------------------------------------FORM-TELEPHONE-------- */
+.form__telephone {
+	padding: 30px;
+	display: flex;
+	align-items: center;
+}
+
+.telephone__text {
+	flex: 25%;
+	text-align: left;
+}
+
+.telephone__input {
+	padding: 7px;
+	flex: 75%;
+	text-align: left;
+	border: 2px solid #0000003f;
+}
+
+.telephone__input:hover {
+	border: 2px solid #00000092;
+}
+
+/* --------------------------------------------------------------FORM-PLACE-------- */
+.form__place {
+	padding: 30px;
+	padding-top: 0px;
+	display: flex;
+	align-items: center;
+}
+
+.place__text {
+	flex: 25%;
+	text-align: left;
+}
+
+.place__selection {
+	padding: 7.5px;
+	flex: 75%;
+	text-align: left;
+	border: 2px solid #0000003f;
+	border-radius: 4px;
+}
+
+.place__selection:hover {
+	border: 2px solid #00000092;
+}
+
+/* -------------------------------------------------------------FORM-APPEAL-------- */
+.form__appeal {}
+
+.appeal__title {}
+
+.appeal__subdivision {
+	padding: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.ap-subdivision__text {
+	flex: 20%;
+	text-align: left;
+}
+
+.ap-subdivision__input {
+	padding: 7px;
+	flex: 80%;
+	text-align: left;
+	border: 2px solid #0000003f;
+}
+
+.ap-subdivision__input:hover,
+.date__input:hover {
+	border: 2px solid #00000092;
+}
+
+.appeal__date {
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+}
+
+.date__text {
+	flex: 20%;
+	text-align: left;
+}
+
+.date__input {
+	padding: 7px;
+	flex: 20%;
+	text-align: left;
+	border: 2px solid #0000003f;
+}
+
+.empty__block {
+	flex: 60%;
+}
+
+/* -----------------------------------------------------------FORM-TEXTAREA-------- */
+.form__textarea {}
+
+.textarea__title {}
+
+#textarea{
+	padding: 7px;
+	width: 100%;
+	font-size: 18px;
+}
+
+.textarea__border{
+	padding: 0;
+	width: 100%;
+}
+
+/* ---------------------------------------------------------------FORM-FILE-------- */
+.form__file {
+	padding-top: 30px;
+}
+.form__file input {
+	height: 40px;
+}
+
+/* ---------------------------------------------------------------NEXT-BACK-------- */
+.next__back {}
+
+.next__back .block__right {
+	text-align: right;
+}
+
+.block__name {
+	padding: 20px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.block__name a {
+	padding: 3px 10px;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: lowercase;
+	color: #000;
+	background-color: #9c9c9c2d;
+	border: 1px solid #000;
+	border-radius: 5px;
+	transition: 0.1s;
+}
+
+.block__name a:hover {
+	border: 2px solid #000;
+}
