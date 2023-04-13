@@ -1,0 +1,176 @@
+/* ---------------------------------------------------------------ОБНУЛЕНИЕ-------- */
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 100%;
+	font-size: 20px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input ::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	bottom: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+input {
+	border: 1px solid #6160606f;
+}
+
+/* ---------------------------------------------------------------MAIN-TAGS-------- */
+._container {
+	padding: 0 50px;
+}
+
+h1 {
+	margin: 20px 0;
+	padding: 5px;
+	text-align: center;
+}
+
+h2 {
+	margin: 20px;
+	text-align: center;
+	font-size: 28px;
+	font-weight: 500;
+}
+
+.practice__link {
+	padding: 5px;
+	text-align: center;
+	font-style: italic;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	text-shadow: 0px 1.8px 1px #44000041;
+	letter-spacing: 3px;
+}
+
+.practice__link :hover {
+	text-shadow: 0px 0px 4px #ff000067, 0px 0px 1px #ff000096;
+	color: #ff1900;
+}
+
+.my__practice {
+	color: #270300df;
+}
+
+/* -------------------------------------------------------------FONT-FAMILY-------- */
+.arial {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.font__size30 {
+	font-size: 30px;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.font700 {
+	font-weight: 700;
+}
+
+.color__red {
+	color: #f00f00;
+}
+
+.text__align {
+	text-align: justify;
+}
+
+.decoration {
+	text-decoration: line-through;
+}
+
+.shadow {
+	text-shadow: 2px 2px 2px #00000058;
+}
+
+.transform {
+	text-transform: capitalize;
+}
+
+.ident {
+	text-indent: 30px;
+}
+
+.letter__spacing {
+	letter-spacing: 2px;
+}
+
+.word__spacing {
+	word-spacing: 8px;
+}
+
+.white__space {
+	white-space: normal ;
+}
+
+.line__height {
+	line-height: 30px;
+}

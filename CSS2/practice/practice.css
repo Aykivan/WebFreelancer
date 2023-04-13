@@ -1,0 +1,180 @@
+/* ---------------------------------------------------------------ОБНУЛЕНИЕ-------- */
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 100%;
+	font-size: 40px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input ::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	bottom: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+input {
+	border: 1px solid #6160606f;
+}
+
+/* ---------------------------------------------------------------MAIN-TAGS-------- */
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #372626;
+	background-color: rgba(240, 229, 201, 0.169);
+}
+
+._container {
+	margin: 50px auto;
+	width: 533px;
+	/* background-image: url(//img/mainfon.jpg); */
+}
+
+p {
+	text-align: inherit;
+}
+
+/* ----------------------------------------------------------TEXT-BLOCK-1-2-------- */
+.text__block1 {
+	/* text-align: center; */
+	text-transform: uppercase;
+	font-size: 39px;
+	font-weight: 400;
+	font-family: 'Rowdies', cursive;
+	letter-spacing: 1px;
+	word-spacing: -2px;
+}
+
+.text__block2 {
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 1.15;
+}
+
+/* -------------------------------------------------------------TEXT-BLOCK3-------- */
+.text__block3 {
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+.left__block3 {
+	font-weight: 600;
+	line-height: 1.15;
+}
+
+.left__block3-1 {
+	font-size: 24px;
+}
+
+.left__block3-2 {
+	font-size: 28px;
+}
+
+.right__block3 {
+	margin-bottom: 3px;
+	font-size: 70px;
+	font-family: 'Rowdies', cursive;
+	font-weight: 400;
+}
+
+/* ------------------------------------------------------------TEXT-BLOCK-4-------- */
+.text__block4 {
+	width: 533px;
+	text-transform: uppercase;
+	font-size: 45px;
+	font-weight: 600;
+}
+
+/* ------------------------------------------------------------TEXT-BLOCK-5-------- */
+.text__block5 {
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.left__block5 {
+	font-size: 39px;
+}
+
+.left__block5-1 {}
+
+.left__block5-2 {
+	width: 100%;
+	height: 32px;
+	background-color: #372626;
+}
+
+.right__block5 {
+	margin-top: 2px;
+	font-size: 91px;
+	font-family: 'Rowdies', cursive;
+	font-weight: 400;
+}
