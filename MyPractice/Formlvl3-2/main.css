@@ -1,0 +1,200 @@
+/* ---------------------------------------------------------------ОБНУЛЕНИЕ-------- */
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 100%;
+	font-size: 40px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input ::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	bottom: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+input {
+	border: 1px solid #6160606f;
+}
+
+/* ---------------------------------------------------------------MAIN-TAGS-------- */
+body {
+	background-color: #3c3c3c;
+	font-family: 'Anuphan', sans-serif;
+}
+
+._container {
+	margin: 50px auto;
+	padding: 50px;
+	width: 700px;
+	text-align: center;
+	background-image: url(bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 0px 0px 8px #1a272f;
+	color: #fff;
+}
+
+.main__container {
+	margin: 0 auto;
+	width: 500px;
+}
+
+h1 {
+	font-size: 70px;
+	text-transform: capitalize;
+	font-weight: 200;
+}
+
+.sub__text1 {
+	margin-top: 50px;
+	text-align: justify;
+}
+
+.sub__text1,
+.sub__text2 {
+	font-size: 18px;
+	font-weight: 200;
+	line-height: 1;
+}
+
+.sub__text2 {
+	margin-bottom: 50px;
+}
+
+.form {}
+
+input,
+textarea,
+button {
+	padding: 5px;
+	margin: 0;
+	width: 100%;
+	height: 36px;
+	border: none;
+	box-shadow: 0 0 4px #0000006e;
+}
+
+/* --------------------------------------------------------------NAME-BLOCK-------- */
+.name__block {}
+
+.name__block-text {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 0;
+}
+
+
+/* ------------------------------------------------------------E-MAIL-BLOCK-------- */
+.email__block {}
+
+.email__block-text {
+	margin-top: 30px;
+	padding: 0;
+	text-align: left;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 0;
+}
+
+/* ----------------------------------------------------------TEXTAREA-BLOCK-------- */
+.message__block {}
+
+.message__block-text {
+	margin-top: 22px;
+	padding: 0;
+	text-align: left;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1;
+}
+
+textarea {
+	margin-top: 8px;
+	display: block;
+	min-height: 150px;
+}
+
+
+/* ------------------------------------------------------------------BUTTON-------- */
+.button__block {
+	margin-top: 10px;
+}
+
+button {
+	background-color: #00a6ff;
+	color: inherit;
+	transition: 0.3s all ease;
+}
+
+button:hover {
+	background-color: #0382c7;
+}
