@@ -95,6 +95,57 @@ input {
 	padding: 20px;
 }
 
-.ex-img{
+.ex-img {
 	width: 100px;
+}
+
+/* ---------------------------------------------------------------HOME-WORK-------- */
+.home__work {
+	margin: 50px;
+	padding: 50px;
+	border: 1px solid #000;
+}
+
+.first__block {
+	width: 50%;
+}
+
+.span1 {
+	margin-top: 20px;
+	display: block;
+}
+
+.a1 {
+	display: block;
+	color: #000;
+}
+
+.second__block {
+	margin-top: 20px;
+}
+
+.small__block {
+	margin-top: 40px;
+	display: inline-block;
+}
+
+.block__p1 {
+	margin-left: 40px;	
+	display: inline-block;
+}
+
+.span2 {
+	margin: 20px;
+	width: 50%;
+	display: inline-block;
+}
+
+.a2 {
+	margin: 20px;
+	display: inline-block;
+}
+
+.span3 {
+	margin: 40px;
+	display: block;
 }

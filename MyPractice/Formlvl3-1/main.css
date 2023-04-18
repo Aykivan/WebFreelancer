@@ -36,7 +36,7 @@ body {
 	width: 100%;
 	font-size: 100%;
 	line-height: 100%;
-	font-size: 20px;
+	font-size: 40px;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -81,3 +81,69 @@ img {
 input {
 	border: 1px solid #6160606f;
 }
+
+/* --------------------------------------------------------------MAIN-BLOCK-------- */
+body {
+	color: #fff;
+}
+
+._container {
+	margin: 40px auto;
+	padding: 30px;
+	width: 700px;
+	text-align: center;
+	border-radius: 30px;
+	background-color: #0c0c14d2;
+	box-shadow: 0px 0px 12px #242424;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	margin: 30px 0;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 36px;
+	font-weight: normal;
+	color: #de7600;
+}
+
+input,
+select,
+textarea {
+	margin: 15px;
+	padding: 10px 20px;
+	border-radius: 6px;
+	width: 550px;
+	height: 55px;
+	font-size: 20px;
+	font-weight: 500;
+	color: #000;
+}
+
+textarea {
+	padding: 5px 15px;
+	margin: 15px;
+	min-height: 150px;
+}
+
+button {
+	margin: 35px;
+	padding: 10px 20px;
+	width: 250px;
+	height: 55px;
+	border-radius: 27px;
+	background-color: #32d074;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.block__name {}
+
+.block__tel {}
+
+.block__type {}
+
+.block__button {}
