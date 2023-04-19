@@ -1,0 +1,169 @@
+/* ---------------------------------------------------------------ОБНУЛЕНИЕ-------- */
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 100%;
+	font-size: 40px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input ::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	bottom: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+/* ---------------------------------------------------------------MAIN-TAGS-------- */
+body {
+	background: #f46c97;
+	font-family: 'Noto Sans JP', sans-serif;
+	color: #fff;
+	font-size: 20px;
+}
+
+._container {
+	margin: 150px 150px;
+	padding: 10px;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#111949+0,2c3565+35,2c3565+70,111949+100 */
+	background: #111949;
+	/* Old browsers */
+	background: -moz-linear-gradient(left, #111949 0%, #2c3565 25%, #2c3565 75%, #111949 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #111949 0%, #2c3565 25%, #2c3565 75%, #111949 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #111949 0%, #2c3565 25%, #2c3565 75%, #111949 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#111949', endColorstr='#111949', GradientType=1);
+	/* IE6-9 */
+	box-shadow: 0 0 35px #111949f3;
+}
+
+/* ----------------------------------------------------------------NAV-TAGS-------- */
+.nav ul {
+	margin: 30px auto;
+	display: flex;
+	justify-content: center;
+	text-transform: uppercase;
+}
+
+.nav a {
+	margin: 20px;
+	font-weight: 400;
+	color: #fff;
+}
+
+a.last__a{
+	font-weight: 700;
+	color: #f46c97;
+}
+
+/* ------------------------------------------------------------CONTENT-TAGS-------- */
+.content {
+	margin:  100px 200px;
+	display: flex;
+	align-items: top;
+}
+
+.content__left-block {
+	padding-right: 100px;
+}
+
+/* --------------------------------------------------------------LEFT-BLOCK-------- */
+.left-block__text {}
+
+.left-block__form {}
+
+.form__name {}
+
+.first__name {}
+
+.second__name {}
+
+.form__contacts {}
+
+.contacts__tel {}
+
+.contacts__email {}
+
+.form__textarea {}
+
+.form__button {}
+
+.content__right-block {}
+
+.right-block__contact {}
+
+.right-block__address {}
+
+.right-block__tel {}
+
+.right-block__shedule {}
+
+.right-block__follow {}
+
+.right-block__link {}
