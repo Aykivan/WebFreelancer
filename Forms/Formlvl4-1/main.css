@@ -87,7 +87,7 @@ body {
 }
 
 ._container {
-	margin: 150px 150px;
+	margin: 150px 300px;
 	padding: 10px;
 	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#111949+0,2c3565+35,2c3565+70,111949+100 */
 	background: #111949;
@@ -103,6 +103,54 @@ body {
 	box-shadow: 0 0 35px #111949f3;
 }
 
+h2 {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1;
+	color: #f46c97;
+}
+
+input,
+textarea {
+	padding: 4px 10px 4px 10px;
+	height: 35px;
+	max-width: 180px;
+	background-color: #616a9a94;
+	border-radius: 8px;
+	color: #fff;
+}
+
+input::placeholder,
+textarea::placeholder {
+	color: #fff;
+}
+
+textarea {
+	display: block;
+	min-height: 100px;
+	min-width: 370px;
+	resize: none;
+}
+
+button {
+	padding: 2px 22px;
+	height: 35px;
+	max-width: 180px;
+	text-transform: uppercase;
+	line-height: 1;
+	background-color: #f46c97;
+	border-radius: 8px;
+	color: #fff;
+	transition: 0.3s all ease;
+}
+
+button:hover {
+	box-shadow: 0px 0px 12px #00000080;
+	background-color: #fb467f;
+
+}
+
+
 /* ----------------------------------------------------------------NAV-TAGS-------- */
 .nav ul {
 	margin: 30px auto;
@@ -112,58 +160,117 @@ body {
 }
 
 .nav a {
-	margin: 20px;
+	margin: 25px;
+	font-size: 18px;
 	font-weight: 400;
 	color: #fff;
+	transition: 0.3s all ease;
 }
 
-a.last__a{
+a.last__a {
 	font-weight: 700;
 	color: #f46c97;
+	transition: 0.3s all ease;
+}
+
+.nav a:hover {
+	/* font-weight: 700; */
+	text-decoration: underline;
+	color: #f46c97;
+	text-shadow: 3px 3px 5px #000000d9;
 }
 
 /* ------------------------------------------------------------CONTENT-TAGS-------- */
 .content {
-	margin:  100px 200px;
+	margin: 80px 120px;
 	display: flex;
 	align-items: top;
+	justify-content: space-between;
 }
 
 .content__left-block {
-	padding-right: 100px;
+	margin: 0px 70px 0px 0px;
+	padding: 10px;
 }
-
-/* --------------------------------------------------------------LEFT-BLOCK-------- */
-.left-block__text {}
-
-.left-block__form {}
-
-.form__name {}
-
-.first__name {}
-
-.second__name {}
-
-.form__contacts {}
-
-.contacts__tel {}
-
-.contacts__email {}
-
-.form__textarea {}
-
-.form__button {}
 
 .content__right-block {}
 
-.right-block__contact {}
+/* --------------------------------------------------------------LEFT-BLOCK-------- */
+.left-block__text {
+	margin: 4px 0px 16px 1px;
+	font-size: 14px;
+}
 
-.right-block__address {}
+.left-block__form {}
 
-.right-block__tel {}
+.form__name {
+	display: flex;
+}
 
-.right-block__shedule {}
+.first__name {
+	margin: 0px 12px 12px 0px;
+}
 
-.right-block__follow {}
+.second__name {
+	margin: 0px 12px 12px 0px;
+}
 
-.right-block__link {}
+.form__contacts {
+	display: flex;
+}
+
+.contacts__tel {
+	margin: 0px 12px 12px 0px;
+}
+
+.contacts__email {
+	margin: 0px 12px 12px 0px;
+}
+
+.form__textarea {}
+
+.form__button {
+	margin: 10px 0;
+}
+
+/* -------------------------------------------------------------RIGHT-BLOCK-------- */
+.content__right-block h2 {
+	line-height: 1.2;
+}
+
+.right-block__contact {
+	margin: 10px 0px 0px 0px;
+}
+
+.right-block__address,
+.right-block__tel,
+.right-block__shedule {
+	margin: 16px 0px 16px 1px;
+	font-size: 14px;
+}
+
+.right-block__shedule {
+	margin-bottom: 20px;
+}
+
+.right-block__follow {
+	df
+}
+
+.right-block__link {
+	display: flex;
+}
+
+.right-block__link a {
+	margin: 8px 20px 0px 0px;
+	display: flex;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	transition: 0.3s all ease;
+}
+
+.right-block__link a:hover {
+	text-decoration: underline;
+	text-shadow: 3px 3px 8px #000000e6;
+}
