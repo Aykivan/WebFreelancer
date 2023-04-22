@@ -182,6 +182,10 @@ button:active {
 	color: rgb(128 67 171);
 }
 
+.block__link a:active {
+	color: rgb(0, 185, 227);
+}
+
 .link__forgot-password,
 .link__singup-now {
 	margin: 20px 0 0 0px;
