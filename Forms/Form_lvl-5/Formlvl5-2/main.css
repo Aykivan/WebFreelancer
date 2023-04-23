@@ -108,6 +108,18 @@ input::placeholder {
 	color: #002865;
 }
 
+input:focus {
+	border: 1px solid rgba(97, 0, 61, 0.6);
+	background-color: #ffffff98;
+	box-shadow: 0 0 5px rgba(97, 0, 61, 0.4);
+}
+
+.right__form input:focus {
+	border: 1px solid rgba(0, 37, 94, 0.6);
+	background-color: #ffffff98;
+	box-shadow: 0 0 5px rgba(0, 37, 94, 0.4);
+}
+
 ._container {
 	margin: 50px auto;
 	max-width: 1100px;
@@ -121,10 +133,10 @@ input::placeholder {
 	flex: 50%;
 	border-radius: 20px;
 	box-shadow: 0 0 15px #0000004c;
-	text-align: right;
 }
 
 .block__right {
+	text-align-last: left;
 	background: rgb(255, 255, 255);
 	background: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.3) 100%);
 }
@@ -133,6 +145,7 @@ input::placeholder {
 .left__form-top {}
 
 .block__left {
+	text-align: right;
 	color: #00173a;
 	background: rgb(255, 255, 255);
 	background: linear-gradient(90deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.9) 100%);
@@ -165,6 +178,18 @@ button.left__sing-in {
 	text-transform: capitalize;
 	background: rgb(0, 37, 94);
 	background: linear-gradient(90deg, rgba(0, 37, 94, 0.8) 0%, rgba(97, 0, 61, 0.8) 100%);
+	transition: 0.4s all ease;
+}
+
+button.left__sing-in:hover {
+	box-shadow: 0 0 6px rgba(0, 37, 94, 1);
+	background: rgb(0, 37, 94);
+	background: linear-gradient(90deg, rgba(0, 37, 94, 1) 0%, rgba(0, 37, 94, 1) 100%);
+}
+
+button.left__sing-in:active {
+	box-shadow: 0 0 6px rgba(97, 0, 61, 1);
+	background: linear-gradient(90deg, rgba(172, 1, 109, 1) 0%, rgb(172, 1, 109) 100%);
 }
 
 .left__forgot-pas {
@@ -175,6 +200,11 @@ button.left__sing-in {
 
 .left__forgot-pas a {
 	color: #00173a;
+	transition: 0.3s;
+}
+
+.left__forgot-pas a:hover {
+	text-decoration: underline;
 }
 
 .left__or {
@@ -189,7 +219,7 @@ button.left__sing-in {
 	content: "";
 	position: absolute;
 	top: 7px;
-	width: 80px;
+	width: 100px;
 	right: 0;
 	height: 2px;
 	background: #00173ab9;
@@ -199,7 +229,7 @@ button.left__sing-in {
 	content: "";
 	position: absolute;
 	top: 7px;
-	width: 80px;
+	width: 100px;
 	left: 0;
 	height: 2px;
 	background: #00173ab9;
@@ -214,15 +244,80 @@ button.left__bottom-button {
 	border: none;
 	color: #00173a;
 	background: linear-gradient(90deg, rgba(108, 133, 169, 0.6) 0%, rgba(97, 0, 61, 0.15) 100%);
+	transition: 0.4s;
+}
+
+button.left__bottom-button:hover {
+	border: 1px solid rgba(97, 0, 61, 0.6);
+	box-shadow: 0 0 6px rgba(97, 0, 61, 0.6);
+	background: linear-gradient(90deg, rgba(97, 0, 61, 0.2) 0%, rgba(97, 0, 61, 0.2) 100%);
+}
+
+button.left__bottom-button:active {
+	background: linear-gradient(90deg, rgba(97, 0, 61, 0.8) 0%, rgba(97, 0, 61, 0.8) 100%);
 }
 
 .left__bottom-a {
 	margin-top: 80px;
 	text-align: center;
 }
-.left__bottom-a a{
+
+.left__bottom-a a {
 	text-decoration: underline;
 	font-weight: 700;
 	font-size: 12px;
 	color: inherit;
+}
+
+.left__bottom-a a:hover {
+	color: rgba(97, 0, 61, 1);
+}
+
+
+/* -------------------------------------------------------------RIGHT-BLOCK-------- */
+.right__form {}
+
+.left__checkbox {
+	justify-content: left;
+}
+
+.checkbox__text a {
+	text-decoration: underline;
+	color: inherit;
+	font-size: 13px;
+}
+
+button.right__button {
+	margin-top: 25px;
+	color: #fff;
+	font-weight: 600;
+	text-transform: capitalize;
+	background: rgb(0, 37, 94);
+	background: linear-gradient(90deg, rgba(0, 37, 94, 0.8) 0%, rgba(97, 0, 61, 0.8) 100%);
+	transition: 0.4s all ease;
+}
+
+button.right__button:hover {
+	box-shadow: 0 0 6px rgba(97, 0, 61, 1);
+	background: linear-gradient(90deg, rgba(172, 1, 109, 1) 0%, rgb(172, 1, 109) 100%);
+}
+
+button.right__button:active {
+	box-shadow: 0 0 6px rgba(0, 37, 94, 1);
+	background: rgb(0, 37, 94);
+	background: linear-gradient(90deg, rgba(0, 37, 94, 1) 0%, rgba(0, 37, 94, 1) 100%);
+}
+
+.right__text {
+	margin: 222px 0 0 30px;
+	text-align: center;
+}
+
+.right__text a{
+	text-align: center;
+}
+
+.right__text a:hover,
+.right__agree a:hover {
+	color: rgba(0, 37, 94, 1);
 }
