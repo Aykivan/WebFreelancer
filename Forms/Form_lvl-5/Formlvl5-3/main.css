@@ -88,7 +88,7 @@ body {
 }
 
 ._container {
-	margin: 60px 30px 0;
+	margin: 60px 150px 0;
 	display: flex;
 }
 
@@ -149,8 +149,72 @@ h3 {
 
 /* -------------------------------------------------------------CLOSE-BLOCK-------- */
 .close__block {
+	padding: 60px 90px 60px 60px;
 	flex: 50%;
 	height: 700px;
 	background-color: #fff;
-	border: 1px solid #000;
+	border-radius: 10px;
+	box-shadow: 0 0 6px #000;
+}
+
+.close__block h2 {
+	font-size: 50px;
+	font-weight: 300;
+}
+
+.close__block input,
+.close__block textarea {
+	padding: 10px;
+	margin: 30px 0;
+	width: 100%;
+	font-size: 14px;
+	border-bottom: 1px solid #000;
+	display: block;
+}
+
+.close__block input:focus,
+.close__block textarea:focus {
+	box-shadow: 0 0 10px #00d5ff;
+	border: 1px solid #00d5ff;
+}
+
+.close__block textarea {
+	margin: 100px 0;
+}
+
+.close__form {}
+
+.personal__data {
+	display: flex;
+	align-items: center;
+}
+
+.data__text {
+	font-size: 12px;
+}
+
+input.checkbox {
+	margin-right: 10px;
+	padding: 0;
+	display: inline-block;
+	width: auto;
+}
+
+button {
+	margin-left: 50px;
+	padding: 10px 42px;
+	height: 40px;
+	width: 240px;
+	color: #fff;
+	font-weight: 700;
+	background-color: #00b087;
+	transition: 0.3s ease;
+}
+
+button:hover {
+	background-color: #007056;
+}
+
+button:active {
+	background-color: #00bcb9;
 }

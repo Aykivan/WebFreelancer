@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="main.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
 	<title>Form lvl-5 №3</title>
 </head>
 
@@ -46,7 +46,23 @@
 				</div>
 			</div>
 		</div>
-		<div class="close__block"></div>
+		<div class="close__block">
+			<h2>Напишите нам</h2>
+			<form action="#" class="close__form">
+				<input tabindex="1" type="text" name="name" placeholder="Имя">
+				<input tabindex="2" type="tel" name="telephone" placeholder="Телефон">
+				<input tabindex="3" type="email" name="email" placeholder="Email">
+				<textarea tabindex="4" name="message" placeholder="Сообщение"></textarea>
+				<div class="personal__data">
+					<input tabindex="5" type="checkbox" class="checkbox">
+					<div class="data__text">
+						Согласен <br>
+						<a href="#">на обработку персональных данных</a>
+					</div>	
+					<button type="submit">Отправить</button>
+				</div>
+			</form>
+		</div>
 	</div>
 </body>
 
