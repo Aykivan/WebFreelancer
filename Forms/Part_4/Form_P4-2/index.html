@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="main.css">
+	<title>Part-4 Form-2</title>
+</head>
+
+<body>
+	<div class="_container">
+		<div class="block__left left">
+			<div class="left__hello hello">
+				<div class="hello__icon"><img src="heart-icon.png" alt=""></div>
+				<div class="hello__text">Hello, Lets get in touch</div>
+			</div>
+			<form action="#" class="left__form form">
+				<input tabindex="1" type="text" name="name" placeholder="You Name">
+				<input tabindex="2" type="email" name="email" placeholder="You Email">
+				<input tabindex="3" type="text" name="reason" placeholder="Reason for contact">
+				<input tabindex="4" type="text" name="phone" placeholder="Phone no">
+				<textarea tabindex="5" name="message" placeholder="Message"></textarea>
+				<button class="form__button" type="submit">Send message</button>
+			</form>
+		</div>
+		<div class="block__right right">
+			<h2 class="right__title">
+				We'd love to <br>
+				Hear <span class="cor__right-title">from you</span>
+			</h2>
+			<div class="right__email"><a href="#">info@jamesw.in</a></div>
+			<div class="right__communication communication">
+				<div class="communication__text">Preferred method of communication</div>
+			</div>
+			<form action="#" class="right__form form__radio">
+				<div class="form__tel">
+					<input id="radio-1" type="radio" name="communication">
+					<label for="radio-1" class="form__text">Phone</label>
+				</div>
+				<div class="form__email">
+					<input id="radio-2" type="radio" name="communication">
+					<label for="radio-2" class="form__text">Email</label>
+				</div>
+			</form>
+			<div class="right__arrow">
+				<a href="#"><img src="arrow-icon.png" alt=""></a>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
