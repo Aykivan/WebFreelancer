@@ -103,17 +103,17 @@ body {
 
 .fon__bottom {
 	bottom: -150px;
-	left: -500px;
+	left: -350px;
 }
 
 .fon__top {
 	top: -150px;
-	right: -500px;
+	right: -350px;
 }
 
 /* ---------------------------------------------------------CONTAINER-BLOCK-------- */
 ._container {
-	margin: 60px 100px;
+	margin: 60px 300px;
 	position: relative;
 	z-index: 1;
 	border-radius: 20px;
@@ -121,27 +121,178 @@ body {
 	box-shadow: 0 0 20px #00000057;
 }
 
-.block__top,
-.block__bottom {
-	height: 50%;
-}
 
+/* ---------------------------------------------------------------BLOCK-TOP-------- */
 .block__top {
 	height: 50%;
-	background-color: #27a5d7;
 	border-radius: 20px 20px 0px 0px;
+	background: url(bg_blue-fon.jpg) 0 0/cover no-repeat;
+	color: #fff;
+	font-size: 30px;
 }
 
+.top__fon-color {
+	padding: 40px 0px 0px 0px;
+	height: 100%;
+	border-radius: 20px 20px 0px 0px;
+	background-color: #27a5d7e5;
+}
+
+.top {}
+
+.top__title {
+	margin: 40px 0px 0px 0px;
+	text-transform: uppercase;
+	font-size: 34px;
+	font-weight: 900;
+}
+
+.top__text {
+	font-size: 18px;
+	line-height: 1;
+}
+
+.top__text:not(:last-child) {
+	margin: 10px 0px 8px 0px;
+}
+
+/* ------------------------------------------------------------BLOCK-BOTTOM-------- */
 .block__bottom {
 	height: 50%;
 	background-color: #fff;
 	border-radius: 0px 0px 20px 20px;
 }
 
-.top {}
+/* --------------------------------------------------------------BLOCK-MAIN-------- */
+.block__main {
+	margin: 220px 120px 0px 120px;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 840px;
+	display: flex;
+	box-shadow: 0 0 20px #00000046;
+}
 
-.top__title {}
+.main {}
 
-.top__text {}
 
-.block__main {}
+/* ----------------------------------------------------------------MAIN-LEFT------- */
+.main-left {
+	padding: 30px 0px 30px 30px;
+	flex: 60%;
+	background-color: #fff;
+	font-size: 20px;
+	text-align-last: left;
+	line-height: 1;
+}
+
+.left__title {
+	margin: 10px 0px 40px 0px;
+	font-weight: 600;
+	color: #6db2ef;
+}
+
+.left__form {}
+
+.first__row,
+.second__row {
+	display: flex;
+}
+
+.firs__row-name,
+.firs__row-phone,
+.second__row-email,
+.second__row-subject,
+.left__message {
+	margin: 0px 40px 0px 0px;
+}
+
+.text__name,
+.text__phone,
+.text__email,
+.text__subject,
+.left__message-text {
+	font-size: 14px;
+	font-weight: 500;
+	color: #00000084;
+}
+
+.left__message-message {}
+
+input,
+textarea {
+	margin: 10px 30px 20px 0px;
+	padding: 5px 0;
+	font-size: 16px;
+	width: 100%;
+	border-bottom: 1px solid #00000023;
+}
+
+input:focus,
+textarea:focus {
+	border-bottom: 1px solid #00000072;
+}
+
+textarea {
+	margin: 10px 30px 0px 0px;
+	height: 60px;
+	resize: none;
+	overflow: hidden;
+}
+
+.left__btn {
+	margin: 30px 40px 10px 0px;
+}
+
+button.send__btn {
+	padding: 10px 20px;
+	height: 40px;
+	border-radius: 20px;
+	color: #fff;
+	font-weight: 600;
+	background: rgb(2, 125, 197);
+	background: linear-gradient(135deg, rgba(2, 125, 197, 1) 0%, rgba(0, 187, 233, 1) 100%);
+	transition: 0.3s all;
+}
+
+button.send__btn:hover {
+	background: linear-gradient(135deg, rgb(0, 84, 133) 0%, rgb(2, 136, 170) 100%);
+}
+
+
+/* ---------------------------------------------------------------MAIN-RIGHT------- */
+.main-right {
+	padding: 30px 0px 30px 30px;
+	text-align-last: left;
+	flex: 40%;
+	color: #fff;
+	font-size: 18px;
+	line-height: 1;
+	background: rgb(13, 166, 119);
+	background: linear-gradient(45deg, rgba(13, 166, 119, 1) 0%, rgba(61, 158, 37, 1) 100%);
+}
+
+.right {}
+
+.right__title {
+	margin: 10px 0px 40px 0px;
+	font-weight: 600;
+}
+
+.right__address {}
+
+.address__text {}
+
+.right__telephone {}
+
+.telephone__text {}
+
+.right__email {}
+
+.email__text {}
+
+.right__website {}
+
+.website__text {}
