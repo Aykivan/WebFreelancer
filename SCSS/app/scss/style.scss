@@ -1,0 +1,55 @@
+// Подключаем другие стили
+@import "null.scss";
+
+// Создаем переменные
+$peremennaya1: 111px;
+
+// Шаблоны
+%tplborder {
+	border-bottom: 5px dashed red;
+}
+
+.tplborder2 {
+	border-bottom: 5px dashed blue;
+}
+
+/* Миксины */
+@mixin someMix($s) {
+	margin: $s;
+}
+
+body {
+	line-height: 1;
+}
+
+h1 {
+	width: 300px / 960px * 100%;
+	background-color: #666;
+	margin: 50px auto;
+	font-size: $peremennaya1;
+}
+
+.block {
+	.block__text {
+		font-size: 50px;
+
+		span {
+			display: block;
+			color: red;
+			text-transform: uppercase;
+			@include someMix(30px)
+		}
+	}
+
+	>p {
+		display: inline;
+		margin: 20px;
+		font-size: 30px;
+		color: green;
+		@extend %tplborder;
+	}
+
+	&:hover {
+		color: aqua;
+	}
+}
