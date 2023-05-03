@@ -1,0 +1,21 @@
+// Подключаем другие стили
+@import "null.scss";
+
+// Создаем переменные
+$peremennaya1: 111px;
+
+// Шаблоны
+%tplborder {
+	border-bottom: 5px dashed red;
+}
+.tplborder2 {
+	border-bottom: 5px dashed blue;
+}
+
+// Миксины 
+@mixin someMix($s) {
+	margin: $s;
+}
+
+& - дублирует имя родителя
+> - обращаемся к первому уровню тегов

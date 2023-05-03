@@ -114,7 +114,7 @@ body {
 
 .forms-link__block {
 	padding: 10px;
-	min-height: 192px;
+	min-height: 214px;
 	flex: 33.333%;
 }
 
@@ -138,8 +138,15 @@ body {
 }
 
 h2 {
-	margin: 0 20px 20px 20px;
+	margin: 0 20px 0px 20px;
 	font-size: 40px;
+}
+
+h3 {
+	margin: 2px 0px 20px 0px;
+	font-size: 20px;
+	font-weight: 400;
+	text-transform: lowercase;
 }
 
 a.form__link {
