@@ -4,7 +4,7 @@
 // Создаем переменные
 $peremennaya1: 111px;
 
-// Шаблоны
+// Шаблоны - добавляем через @extend
 %tplborder {
 	border-bottom: 5px dashed red;
 }
@@ -19,3 +19,49 @@ $peremennaya1: 111px;
 
 & - дублирует имя родителя
 > - обращаемся к первому уровню тегов
+
+Цикл for
+@for $i from 1 through 5 {
+	.image__#{i1}
+		background: url('img/image-#{$i}.png');
+}
+
+Цикл each
+$floats: (left, right, none)
+@each $float in @floats {
+	.float--#{$float} {
+		float: #{@float};
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
