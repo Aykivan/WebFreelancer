@@ -1,0 +1,35 @@
+.benefits {
+	padding: 120px 0px 120px 0px;
+	position: relative;
+
+	&::after {
+		content: "II";
+		left: calc(50% + 555px);
+		transform: translate(-50%, 0);
+		line-height: 1.2;
+		@include decorNumber;
+	}
+}
+
+.benefits__row {
+	margin: 0 auto;
+	max-width: 824px;
+	display: flex;
+	align-items: center;
+	column-gap: 70px;
+}
+
+.benefits__item {
+	text-align: center;
+}
+
+.benefits__item-image {
+	margin: 0px 0px 53px 0px;
+}
+
+.benefits__item-text {
+	font-family: $font-secondary;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 27px;
+}

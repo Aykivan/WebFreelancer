@@ -1,0 +1,14 @@
+.nav {
+
+	&__list {
+		padding-left: 14px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	a {
+		font-size: 14px;
+		line-height: 16px;
+		letter-spacing: 0.05em;
+	}
+}
