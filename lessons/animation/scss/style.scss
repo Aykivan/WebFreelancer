@@ -1,0 +1,47 @@
+// Base
+@import "base/reset";
+@import "base/vars";
+@import "base/base";
+
+body {
+	background-color: #1d1d1d;
+	padding: 50px;
+
+}
+
+.circle {
+
+	background-color: #fff;
+	height: 100px;
+	width: 100px;
+	position: relative;
+
+	// animation-name: white-circle;
+	// animation-duration: 2s;
+	// animation-timing-function: linear;
+	// animation-iteration-count: infinite;
+	// animation-direction: alternate;
+	// animation-delay: 1s;
+
+	// дает возможность сохранить изменения после завершения анимации
+	animation-fill-mode: forwards;
+
+	// краткая запись указывается в последовательности выше
+	animation: white-circle 2s linear infinite alternate 1s;
+
+	&:hover{
+		animation-play-state: paused;
+	}
+}
+
+@keyframes white-circle {
+	0% {
+		left: 0;
+		border-radius: 50%;
+	}
+
+	100% {
+		left: 500px;
+		border-radius: 0%;
+	}
+}
