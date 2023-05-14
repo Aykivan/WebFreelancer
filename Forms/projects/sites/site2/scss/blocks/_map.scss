@@ -23,3 +23,23 @@
 		background-color: $color-map-bg;
 	}
 }
+
+@include mediaTablet{
+	.map-section{
+		padding: 120px 0px 0px 0px;
+	}
+
+	.map-section__title {
+		margin: 0px 0px 60px 0px;
+	}
+}
+
+@include mediaPhone{
+	.map-section{
+		padding: 60px 0px 0px 0px;
+	}
+
+	.map-section__title {
+		margin: 0px 0px 30px 0px;
+	}
+}

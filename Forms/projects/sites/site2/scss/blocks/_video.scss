@@ -1,6 +1,7 @@
 .video {
 	position: relative;
 	text-align: center;
+	overflow: hidden;
 
 	&::after {
 		content: "IV";
@@ -47,7 +48,11 @@
 	transition: transform 0.2s ease-in;
 }
 
-.video__img {
-	max-height: 650px;
-	max-width: 720px;
+.video__img {}
+
+@include mediaSmallPhone {
+	.video__icon{
+		width: 80px;
+		height: 80px;
+	}
 }

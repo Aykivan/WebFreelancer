@@ -20,3 +20,20 @@
 	// grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
 	gap: 30px;
 }
+
+@include mediaTablet {
+	.apartments__title {
+		margin: 0px 0px 40px 0px;
+	}
+
+	.apartments__cards {
+		gap: 50px;
+		grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+	}
+}
+
+@include mediaPhone {
+	.apartments__cards {
+		gap: 30px;
+	}
+}

@@ -1,6 +1,7 @@
 .benefits {
 	padding: 120px 0px 120px 0px;
 	position: relative;
+	overflow: hidden;
 
 	&::after {
 		content: "II";
@@ -32,4 +33,32 @@
 	font-size: 20px;
 	font-weight: 300;
 	line-height: 27px;
+}
+
+@include mediaTablet {
+	.benefits__item-image {
+		margin: 0px 0px 20px 0px;
+
+		img {
+			width: 60px;
+			height: 60px;
+		}
+	}
+
+	.benefits__item-text {
+		font-size: 16px;
+	}
+}
+
+@include mediaPhone {
+	.benefits__row {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+		gap: 100px 30px;
+	}
+
+	.benefits__item-text {
+		margin: 0 auto;
+		// max-width: 130px;
+	}
 }

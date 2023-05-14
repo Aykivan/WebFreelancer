@@ -45,6 +45,12 @@ a {
 	line-height: 48px;
 }
 
-.no-scroll{
+.no-scroll {
 	overflow-y: hidden;
+}
+
+@include mediaTablet {
+	.title__h2 {
+		font-size: 28px;
+	}
 }

@@ -12,3 +12,33 @@
 	grid-template-columns: repeat(4, 1fr);
 	gap: 30px;
 }
+
+@include mediaTablet {
+
+	.feedback {
+		padding: 120px 0px 120px 0px;
+	}
+
+	.feedback__title {
+		margin: 0px 0px 40px 0px;
+	}
+
+	.feedback__form {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@include mediaPhone {
+
+	.feedback {
+		padding: 60px 0px 60px 0px;
+	}
+
+	.feedback__title {
+		margin: 0px 0px 20px 0px;
+	}
+
+	.feedback__form {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}

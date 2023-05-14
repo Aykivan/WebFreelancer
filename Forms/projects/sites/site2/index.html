@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="./libs/youtubeLightbox/youtubeLightbox.css">
 	<title>LoftHouse</title>
 </head>
 
@@ -85,7 +86,7 @@
 	</header>
 
 	<main class="main">
-		<section class="benefits none">
+		<section class="benefits none1">
 			<div class="container">
 				<h2 class="visually__hidden">Преимущества ЖК</h2>
 				<div class="benefits__row">
@@ -118,7 +119,7 @@
 			</div>
 		</section>
 
-		<section class="apartments none">
+		<section class="apartments none1">
 			<div class="container">
 				<div class="apartments__title">
 					<h2 class="title__h2">Наши квартиры</h2>
@@ -144,7 +145,7 @@
 			</div>
 		</section>
 
-		<section class="cta none">
+		<section class="cta none1">
 			<div class="container">
 				<div class="cta-title">
 					<h2 class="title__h2">Хотите посмотреть?</h2>
@@ -161,7 +162,7 @@
 					</div>
 					<form action="#" class="cta__form form">
 						<input type="text" class="form__input" placeholder="Ваше имя" autocomplete="off">
-						<input type="tel" class="form__input" placeholder="Ваш телефон" autocomplete="off">
+						<input data-tel-input type="tel" class="form__input" placeholder="Ваш телефон" autocomplete="off">
 						<p class="form__privacy">
 							*Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.
 						</p>
@@ -171,17 +172,17 @@
 			</div>
 		</section>
 
-		<section class="video none">
+		<section class="video none1">
 			<div class="container">
 				<h2 class="visually__hidden">Видео про ЖК Loft House</h2>
-				<a href="https://www.youtube.com" class="video__link">
+				<a href="https://www.youtube.com/watch?v=bhJNL9JUsnY" data-youtubeLightbox class="video__link">
 					<img src="img/video/play-button.svg" alt="play" class="video__icon">
 					<img src="img/video/video-img.jpg" alt="img" class="video__img">
 				</a>
 			</div>
 		</section>
 
-		<section class="map-section none">
+		<section class="map-section none1">
 			<div class="container">
 				<div class="map-section__title">
 					<h2 class="title__h2">Район на карте</h2>
@@ -192,7 +193,7 @@
 			</div>
 		</section>
 
-		<section class="feedback none">
+		<section class="feedback none1">
 			<div class="container">
 				<div class="feedback__title">
 					<h2 class="title__h2">Есть вопросы?</h2>
@@ -200,14 +201,14 @@
 				<form class="feedback__form form">
 					<p class="form__privacy">*Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.</p>
 					<input type="text" class="form__input" placeholder="Ваше имя" autocomplete="off">
-					<input type="tel" class="form__input" placeholder="Ваш телефон" autocomplete="off">
+					<input data-tel-input type="tel" class="form__input" placeholder="Ваш телефон" autocomplete="off">
 					<button class="form__button">Посмотреть район</button>
 				</form>
 			</div>
 		</section>
 	</main>
 
-	<footer class="footer none">
+	<footer class="footer none1">
 		<div class="container">
 			<div class="footer__row">
 				<div class="footer__logo">
@@ -263,6 +264,22 @@
 		</div>
 	</footer>
 
+	<!-- YouTube LightBox -->
+	<div id="youtubelightbox" class="youtubelightbox">
+		<div class="youtubelightbox__centeredchild">
+			<div class="youtubelightbox__videowrapper">
+				<div id="youtubelightboxPlayer"></div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=6986ad20-9084-4d6a-8607-a1d3c0e376d3&lang=ru_RU"
+		type="text/javascript"></script>
+	<script src="./libs/phoneMask/mask.js"></script>
+	<script src="./libs/phoneMask/mask_list.js"></script>
+	<script src="./libs/youtubeLightbox/youtubeLightbox.js"></script>
+
+	<!-- 6986ad20-9084-4d6a-8607-a1d3c0e376d3 -->
 	<script src="./js/main.js"></script>
 </body>
 

@@ -70,7 +70,7 @@
 		row-gap: 30px;
 	}
 
-	.header__nav-btn{
+	.header__nav-btn {
 		position: absolute;
 		right: 15px;
 		top: 50px;
@@ -191,7 +191,7 @@
 
 	.header__column {
 		min-height: unset;
-		row-gap: 50px;
+		row-gap: 90px;
 	}
 
 	.header__center .header__title {
@@ -209,5 +209,55 @@
 		justify-content: start;
 		flex-direction: column;
 		gap: 30px;
+	}
+}
+
+@include mediaPhone {
+	.header__column {
+		min-height: unset;
+		row-gap: 90px;
+	}
+
+	.header__center .header__title {
+		margin: 0px 20px 90px 20px;
+		font-size: 32px;
+		line-height: 48px;
+	}
+
+	.header__center-mouse {
+		margin: 0px 0px 50px 0px;
+	}
+
+	.header__footer {
+		gap: 10px;
+
+		a {
+			font-size: 16px;
+		}
+	}
+}
+
+@include mediaSmallPhone {
+	.header__column {
+		min-height: unset;
+		row-gap: 90px;
+	}
+
+	.header__center .header__title {
+		margin: 0px 20px 80px 20px;
+		font-size: 28px;
+		line-height: 38px;
+	}
+
+	.header__center-mouse {
+		margin: 0px 0px 50px 0px;
+	}
+
+	.header__footer {
+		gap: 10px;
+
+		a {
+			font-size: 16px;
+		}
 	}
 }
