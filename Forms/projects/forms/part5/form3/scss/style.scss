@@ -1,0 +1,47 @@
+// Base
+@import "base/reset";
+@import "base/vars";
+@import "base/base";
+
+
+// Block
+.wrapper {
+	display: flex;
+	height: 100vh;
+	position: relative;
+}
+
+.main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	z-index: 3;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: url(../gorod-san-francisco-san.jpg) 0 0/cover no-repeat;
+
+	&__title{
+		color:#fff;
+		font-size: 52px;
+		font-weight: 700;
+		font-family: 'Arial';
+	}
+}
+
+.overlay {
+	height: 100%;
+	width: 2%;
+	position: relative;
+	z-index: 4;
+	background: url(../7452b319d2ee1b7c72d59cb7653c2be4.jpeg) 0 0/cover no-repeat;
+	background-attachment: fixed;
+	transition: 4s linear;
+
+	&:hover{
+		transition: 0s linear;
+		opacity: 0;
+	}
+}
