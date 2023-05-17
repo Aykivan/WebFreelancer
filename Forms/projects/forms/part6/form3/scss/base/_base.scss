@@ -1,0 +1,19 @@
+body, html {
+}
+
+.container {
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+}
+
+.visually__hidden {
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	position: absolute;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	white-space: nowrap;
+}
