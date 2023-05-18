@@ -1,0 +1,113 @@
+.my__ring-body {
+	width: 300px;
+	height: 300px;
+	background-color: rgb(17, 17, 17);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.my__ring-body__container {
+	width: 100%;
+	position: relative;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	p{
+		position: absolute;
+		top: 140px;
+		color: #fff;
+		font-family: serif;
+		font-weight: 700;
+		font-size: 30px;
+	}
+}
+
+.my__ring-body__ring {
+	margin: -10px;
+	position: relative;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	border-top: 5px solid transparent;
+	border-right: 5px solid rgb(0, 252, 118);
+	box-shadow: 0 0 6px rgba(0, 252, 118, 0.15);
+	animation: my-ring-animated2 2s linear infinite;
+
+	&::before {
+		content: '';
+		width: 14px;
+		height: 14px;
+		border-radius: 50%;
+		position: absolute;
+		top: 10px;
+		left: 95px;
+
+		background-color: rgb(0, 252, 118);
+		box-shadow:
+			0 0 0 4px rgba(0, 252, 118, 0.2),
+			0 0 0 8px rgba(0, 252, 118, 0.1);
+	}
+
+	&:nth-child(2) {
+		position: absolute;
+		top: -60px;
+		border-right: 5px solid rgb(252, 0, 97);
+		box-shadow: 0 0 6px rgba(252, 0, 97, 0.15);
+		animation-delay: -1s; 
+	}
+
+	&:nth-child(2)::before {
+		background-color: rgb(252, 0, 97);
+		box-shadow:
+			0 0 0 4px rgba(252, 0, 97, 0.2),
+			0 0 0 8px rgba(252, 0, 97, 0.1);
+	}
+
+	&:nth-child(3) {
+		border-top: 5px solid rgb(0, 189, 252);
+		border-right: 5px solid transparent;
+		box-shadow: 0 0 6px rgba(0, 189, 252, 0.15);
+		animation: my-ring-animated 2s linear infinite;
+		animation-delay: -3s;
+	}
+
+	&:nth-child(3)::before {
+		background-color: rgb(0, 189, 252);
+		box-shadow:
+			0 0 0 4px rgba(0, 189, 252, 0.2),
+			0 0 0 8px rgba(0, 189, 252, 0.1);
+	}
+}
+
+.my__ring-body__planet {
+	width: 60px;
+	height: 60px;
+	position: relative;
+	background-color: rgb(18, 0, 77);
+	border-radius: 50%;
+
+	position: absolute;
+}
+
+@keyframes my-ring-animated {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes my-ring-animated2 {
+	0% {
+		transform: rotate(360deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}
