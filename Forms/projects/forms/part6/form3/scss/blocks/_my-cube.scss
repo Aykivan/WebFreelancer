@@ -1,5 +1,131 @@
-.my__cube-body{
+.my__cube-body {
 	width: 300px;
 	height: 300px;
-	background-color: aqua;
+	background: radial-gradient(#212121, #000);
+	position: relative;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	perspective: 500px;
+}
+
+.my__cube-body__btn {
+	padding: 5px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	border-radius: 5px;
+	font-weight: 700;
+	font-size: 16px;
+	color: black;
+	background-color: #fff;
+	box-shadow: 0 5px 0 #ffffff87;
+	transition: all 0.2s ease;
+
+	&:focus {
+		top: 12px;
+		box-shadow: 0 3px 0 #ffffff87;
+	}
+
+	&:focus~.my__cube-body__box #mFront {
+		transform: translateZ(80px) rotateZ(360deg);
+	}
+
+	&:focus~.my__cube-body__box #mBack {
+		transform: translateZ(-80px) rotateZ(360deg);
+	}
+
+	&:focus~.my__cube-body__box #mLeft {
+		right: 80px;
+	}
+
+	&:focus~.my__cube-body__box #mRight {
+		left: 80px;
+	}
+
+	&:focus~.my__cube-body__box #mBottom {
+		bottom: -80px;
+	}
+
+	&:focus~.my__cube-body__box #mTop {
+		bottom: 80px;
+	}
+}
+
+.my__cube-body__box {
+	width: 120px;
+	height: 120px;
+	position: relative;
+
+	transform-style: preserve-3d;
+	animation: my-cube-animated 8s linear infinite;
+	animation-delay: -3s;
+}
+
+@keyframes my-cube-animated {
+	0% {
+		transform: rotateX(55deg) rotateY(-55deg);
+	}
+
+	25% {
+		transform: rotateX(-55deg) rotateY(-55deg);
+	}
+
+	50% {
+		transform: rotateX(55deg) rotateY(55deg);
+	}
+
+	75% {
+		transform: rotateX(-55deg) rotateY(55deg);
+	}
+
+	100% {
+		transform: rotateX(55deg) rotateY(-55deg);
+	}
+}
+
+.my__cube-body__card {
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-size: 28px;
+	font-weight: 700;
+	color: #fff;
+	border: 2px solid #fff;
+	background-color: #01c6fc;
+	transition: all 2s linear;
+}
+
+#mFront {
+	transform: translateZ(60px);
+}
+
+#mBack {
+	transform: translateZ(-60px);
+}
+
+#mLeft {
+	right: 60px;
+	transform: rotateY(-90deg);
+}
+
+#mRight {
+	left: 60px;
+	transform: rotateY(90deg);
+}
+
+#mTop {
+	bottom: 60px;
+	transform: rotateX(90deg);
+}
+
+#mBottom {
+	bottom: -60px;
+	transform: rotateX(-90deg);
 }

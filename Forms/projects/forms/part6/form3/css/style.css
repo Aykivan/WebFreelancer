@@ -554,7 +554,7 @@ html {
   cursor: pointer;
   position: absolute;
   top: 10px;
-  left: 10px;
+  right: 10px;
   border-radius: 5px;
   -webkit-box-shadow: 0 5px 0 rgba(0, 0, 0, 0.7254901961);
           box-shadow: 0 5px 0 rgba(0, 0, 0, 0.7254901961);
@@ -692,7 +692,174 @@ html {
 .my__cube-body {
   width: 300px;
   height: 300px;
-  background-color: aqua;
+  background: radial-gradient(#212121, #000);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  -webkit-perspective: 500px;
+          perspective: 500px;
+}
+
+.my__cube-body__btn {
+  padding: 5px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  color: black;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 0 rgba(255, 255, 255, 0.5294117647);
+          box-shadow: 0 5px 0 rgba(255, 255, 255, 0.5294117647);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.my__cube-body__btn:focus {
+  top: 12px;
+  -webkit-box-shadow: 0 3px 0 rgba(255, 255, 255, 0.5294117647);
+          box-shadow: 0 3px 0 rgba(255, 255, 255, 0.5294117647);
+}
+.my__cube-body__btn:focus ~ .my__cube-body__box #mFront {
+  -webkit-transform: translateZ(80px) rotateZ(360deg);
+          transform: translateZ(80px) rotateZ(360deg);
+}
+.my__cube-body__btn:focus ~ .my__cube-body__box #mBack {
+  -webkit-transform: translateZ(-80px) rotateZ(360deg);
+          transform: translateZ(-80px) rotateZ(360deg);
+}
+.my__cube-body__btn:focus ~ .my__cube-body__box #mLeft {
+  right: 80px;
+}
+.my__cube-body__btn:focus ~ .my__cube-body__box #mRight {
+  left: 80px;
+}
+.my__cube-body__btn:focus ~ .my__cube-body__box #mBottom {
+  bottom: -80px;
+}
+.my__cube-body__btn:focus ~ .my__cube-body__box #mTop {
+  bottom: 80px;
+}
+
+.my__cube-body__box {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-animation: my-cube-animated 8s linear infinite;
+          animation: my-cube-animated 8s linear infinite;
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+}
+
+@-webkit-keyframes my-cube-animated {
+  0% {
+    -webkit-transform: rotateX(55deg) rotateY(-55deg);
+            transform: rotateX(55deg) rotateY(-55deg);
+  }
+  25% {
+    -webkit-transform: rotateX(-55deg) rotateY(-55deg);
+            transform: rotateX(-55deg) rotateY(-55deg);
+  }
+  50% {
+    -webkit-transform: rotateX(55deg) rotateY(55deg);
+            transform: rotateX(55deg) rotateY(55deg);
+  }
+  75% {
+    -webkit-transform: rotateX(-55deg) rotateY(55deg);
+            transform: rotateX(-55deg) rotateY(55deg);
+  }
+  100% {
+    -webkit-transform: rotateX(55deg) rotateY(-55deg);
+            transform: rotateX(55deg) rotateY(-55deg);
+  }
+}
+
+@keyframes my-cube-animated {
+  0% {
+    -webkit-transform: rotateX(55deg) rotateY(-55deg);
+            transform: rotateX(55deg) rotateY(-55deg);
+  }
+  25% {
+    -webkit-transform: rotateX(-55deg) rotateY(-55deg);
+            transform: rotateX(-55deg) rotateY(-55deg);
+  }
+  50% {
+    -webkit-transform: rotateX(55deg) rotateY(55deg);
+            transform: rotateX(55deg) rotateY(55deg);
+  }
+  75% {
+    -webkit-transform: rotateX(-55deg) rotateY(55deg);
+            transform: rotateX(-55deg) rotateY(55deg);
+  }
+  100% {
+    -webkit-transform: rotateX(55deg) rotateY(-55deg);
+            transform: rotateX(55deg) rotateY(-55deg);
+  }
+}
+.my__cube-body__card {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: #01c6fc;
+  -webkit-transition: all 2s linear;
+  transition: all 2s linear;
+}
+
+#mFront {
+  -webkit-transform: translateZ(60px);
+          transform: translateZ(60px);
+}
+
+#mBack {
+  -webkit-transform: translateZ(-60px);
+          transform: translateZ(-60px);
+}
+
+#mLeft {
+  right: 60px;
+  -webkit-transform: rotateY(-90deg);
+          transform: rotateY(-90deg);
+}
+
+#mRight {
+  left: 60px;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+}
+
+#mTop {
+  bottom: 60px;
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+}
+
+#mBottom {
+  bottom: -60px;
+  -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
 }
 
 .circle-block {
