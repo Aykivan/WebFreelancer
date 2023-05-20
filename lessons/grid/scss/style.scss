@@ -1,0 +1,40 @@
+// Base
+@import "base/reset";
+@import "base/vars";
+@import "base/base";
+
+// 
+body {
+	background-color: #202020;
+	color: #fff;
+}
+
+h1 {
+	margin: 20px;
+	font-size: 40px;
+	text-align: center;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 15px;
+	max-width: 1130px;
+	position: relative;
+
+}
+
+.grid__body {
+	display: grid;
+	grid-template:
+		[start] "header header" 100px [row2] 
+		[row2] "side content" 1fr [row-end] / 150px 1fr;
+	// grid-template-columns: repeat(1fr, 3);
+	// grid-template-rows: 50% 50%;
+}
+
+.grid__item {
+	text-align: center;
+	border: 1px dashed #bfbfbf;
+	padding: 10px;
+	font-size: 30px;
+}
