@@ -103,6 +103,11 @@ body {
   font-family: "PT Sans", sans-serif;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 950px;
+}
+
 .visually__hidden {
   height: 1px;
   width: 1px;
@@ -115,7 +120,33 @@ body {
   white-space: nowrap;
 }
 
-h1 {
-  font-family: "Ceremonious";
-  font-size: 50px;
+.header {
+  background-color: #1c242a;
+}
+.header__container {
+  padding: 25px 0px 0px 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.menu__link {
+  color: #fff;
+  text-transform: uppercase;
 }

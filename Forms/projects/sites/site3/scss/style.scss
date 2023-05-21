@@ -5,12 +5,7 @@
 @import "base/base";
 
 // Block
-
-h1 {
-	font-family: 'Ceremonious';
-	font-size: 50px;
-}
-
+@import "blocks/header"
 
 // font-family: 'BravoRGRegular';
 // font-family: 'PFDin-reg';
