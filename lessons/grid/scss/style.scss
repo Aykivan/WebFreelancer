@@ -56,10 +56,16 @@
 
 .main {
 	grid-area: main;
+	padding: 30px 15px;
+	display: grid;
+	grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr; 
 }
 
 .sidebar {
-
+	grid-column: 2 / 3;
+	padding: 15px;
+	background-color: #7a956b;
+	
 	// .sidebar__menu
 	&__menu {}
 }
@@ -68,7 +74,9 @@
 
 .sidebar__link {}
 
-.content {}
+.content {
+	grid-column: 3 / 4;
+}
 
 .content__title {}
 
