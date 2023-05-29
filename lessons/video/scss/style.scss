@@ -1,0 +1,33 @@
+// Base
+@import "base/reset";
+@import "base/vars";
+@import "base/base";
+
+// Block
+
+.wrapper {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #1b1b1b;
+}
+
+h1 {
+	font-size: 30px;
+	margin: 0px 0px 30px 0px;
+}
+
+.video {
+
+	// .video__item
+	&__item {
+		width: 400px;
+	}
+
+	&:focus {
+		border-radius: 2px;
+		border: 1px solid #fff;
+	}
+}
