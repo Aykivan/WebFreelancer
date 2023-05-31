@@ -3,10 +3,10 @@
 
 	// .header__container
 	&__container {
-		padding: 25px 0px 0px 35px;
+		position: relative;
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		height: 75px;
 	}
 
 	// .header__logo
@@ -20,6 +20,8 @@
 }
 
 .menu {
+	padding: 0px 0px 0px 30px/950px * 100%;
+	flex: 1 1 auto;
 
 	// .menu__icon
 	&__icon {}
@@ -30,48 +32,98 @@
 	// .menu__list
 	&__list {
 		display: flex;
-		align-items: center;
-		justify-content: space-between;
+		justify-content: center;
+
+		li {
+			margin: 0 15px;
+		}
 	}
 
 	// .menu__link
 	&__link {
+		font-family: 'PFDin-reg';
+		letter-spacing: 1.4;
 		color: #fff;
 		text-transform: uppercase;
 	}
 }
 
+// Burger
 .icon-menu {}
 
 .actions-header {
+	display: flex;
+	align-items: center;
 
 	// .actions-header__region
-	&__region {}
+	&__region {
+		@extend .menu__link;
+		line-height: 18px;
+		padding: 0px 0px 0px 30px;
+		background: url(../img/header/globe.png) left no-repeat;
+	}
 
 	// .actions-header__user
-	&__user {}
+	&__user {
+		margin: 0px 0px 0px 30px;
+	}
 }
 
 .user-header {
 
 	// .user-header__icon
-	&__icon {}
+	&__icon {
+		cursor: pointer;
+	}
 
 	// .user-header__menu
-	&__menu {}
+	&__menu {
+		padding: 20px;
+		top: 78px;
+		right: 0;
+		position: absolute;
+		background-color: #1c242a;
+
+		li {
+			margin: 0px 0px 8px 0px;
+
+			&:last-child {
+				margin: 0px 0px 0px 0px;
+			}
+		}
+	}
 
 	// .user-header__link
-	&__link {}
+	&__link {
+		padding: 0px 0px 0px 30px;
+		line-height: 18px;
+		display: inline-block;
+		color: #fff;
+	}
 
 	// .user-header__link_1
-	&__link_1 {}
+	&__link_1 {
+		background: url(../img/header/hover-globe.png) 1px center no-repeat;
+	}
 
 	// .user-header__link_2
-	&__link_2 {}
+	&__link_2 {
+		background: url(../img/header/hover-key.png) left center no-repeat;
+	}
 
 	// .user-header__link_3
-	&__link_3 {}
+	&__link_3 {
+		background: url(../img/header/hover-palm.png) 4px center no-repeat;
+	}
 
 	// .user-header__link_4
-	&__link_4 {}
+	&__link_4 {
+		background: url(../img/header/hover-hammer.png) left center no-repeat;
+	}
+
+	@media (min-width: 992px) {
+		.user-header__link:hover {
+			text-decoration: underline;
+		}
+	}
 }

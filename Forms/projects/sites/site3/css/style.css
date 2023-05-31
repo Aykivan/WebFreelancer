@@ -124,29 +124,92 @@ body {
   background-color: #1c242a;
 }
 .header__container {
-  padding: 25px 0px 0px 35px;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  height: 75px;
+}
+.menu {
+  padding: 0px 0px 0px 3.1578947368%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.menu__list li {
+  margin: 0 15px;
+}
+.menu__link, .actions-header__region {
+  font-family: "PFDin-reg";
+  letter-spacing: 1.4;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.actions-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
-.menu__link {
+.actions-header__region {
+  line-height: 18px;
+  padding: 0px 0px 0px 30px;
+  background: url(../img/header/globe.png) left no-repeat;
+}
+.actions-header__user {
+  margin: 0px 0px 0px 30px;
+}
+
+.user-header__icon {
+  cursor: pointer;
+}
+.user-header__menu {
+  padding: 20px;
+  top: 78px;
+  right: 0;
+  position: absolute;
+  background-color: #1c242a;
+}
+.user-header__menu li {
+  margin: 0px 0px 8px 0px;
+}
+.user-header__menu li:last-child {
+  margin: 0px 0px 0px 0px;
+}
+.user-header__link {
+  padding: 0px 0px 0px 30px;
+  line-height: 18px;
+  display: inline-block;
   color: #fff;
-  text-transform: uppercase;
+}
+.user-header__link_1 {
+  background: url(../img/header/hover-globe.png) 1px center no-repeat;
+}
+.user-header__link_2 {
+  background: url(../img/header/hover-key.png) left center no-repeat;
+}
+.user-header__link_3 {
+  background: url(../img/header/hover-palm.png) 4px center no-repeat;
+}
+.user-header__link_4 {
+  background: url(../img/header/hover-hammer.png) left center no-repeat;
+}
+@media (min-width: 992px) {
+  .user-header .user-header__link:hover {
+    text-decoration: underline;
+  }
 }
